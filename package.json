@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "react-intersection-observer": "^9.13.1",
+    "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
     "typescript": "^5",
