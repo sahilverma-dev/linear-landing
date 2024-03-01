@@ -1,3 +1,4 @@
+import { ClientsSection } from "./_components/sections/clients";
 import { HeroSection } from "./_components/sections/hero-section";
 import Container from "./_components/shared/container";
 
@@ -9,6 +10,9 @@ const Home = () => {
           <HeroSection />
         </Container>
       </div>
+      <Container>
+        <ClientsSection />
+      </Container>
     </>
   );
 };
