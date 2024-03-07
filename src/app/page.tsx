@@ -4,6 +4,8 @@ import { HeroSection } from "./_components/sections/hero-section";
 import Container from "./_components/shared/container";
 import { StarsIllustration } from "./_components/icons/stars";
 import { UnlikeAnyToolSection } from "./_components/sections/unlike-any-tool";
+import { BuildMomentumSection } from "./_components/sections/build-momentum";
+import { EnjoyIssueTrackingSection } from "./_components/sections/enjoy-issue-tracking";
 
 const Home = () => {
   return (
@@ -28,6 +30,8 @@ const Home = () => {
       <Container>
         <UnlikeAnyToolSection />
       </Container>
+      <EnjoyIssueTrackingSection />
+      <BuildMomentumSection />
     </>
   );
 };
