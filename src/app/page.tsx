@@ -6,6 +6,7 @@ import { StarsIllustration } from "./_components/icons/stars";
 import { UnlikeAnyToolSection } from "./_components/sections/unlike-any-tool";
 import { BuildMomentumSection } from "./_components/sections/build-momentum";
 import { EnjoyIssueTrackingSection } from "./_components/sections/enjoy-issue-tracking";
+import { SetDirectionSection } from "./_components/sections/set-direction";
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
       </Container>
       <EnjoyIssueTrackingSection />
       <BuildMomentumSection />
+      <SetDirectionSection />
     </>
   );
 };
