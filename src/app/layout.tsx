@@ -22,8 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <SmoothScrollProvider>
+      <SmoothScrollProvider>
+        <body className={inter.className}>
           <div>
             <Header />
             <main className="bg-page-gradient pt-navigation-height">
@@ -31,8 +31,8 @@ export default function RootLayout({
             </main>
             <Footer />
           </div>
-        </SmoothScrollProvider>
-      </body>
+        </body>
+      </SmoothScrollProvider>
     </html>
   );
 }
