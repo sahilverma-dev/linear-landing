@@ -18,7 +18,7 @@ export const EnjoyIssueTrackingSection = () => {
           <>
             Issue tracking
             <br />
-            you'll enjoy using
+            you&apos;ll enjoy using
           </>
         }
         image="/images/issues.webp"
@@ -44,7 +44,7 @@ export const EnjoyIssueTrackingSection = () => {
           {
             icon: CustomViewsIcon,
             title: "Filters and custom views.",
-            text: "See only what's relevant for you.",
+            text: "See only what&apos;s relevant for you.",
           },
           {
             icon: DiscussionIcon,
