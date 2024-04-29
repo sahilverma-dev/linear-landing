@@ -10,6 +10,7 @@
   html {
     @apply bg-background font-sans text-off-white;
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
 
   .highlighted-keys .active rect:first-child {

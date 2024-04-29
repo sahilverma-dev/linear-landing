@@ -1,3 +1,5 @@
+"use client";
+
 import { classNames } from "@/utils";
 import { ClientsSection } from "./_components/sections/clients";
 import { HeroSection } from "./_components/sections/hero-section";
@@ -7,8 +9,24 @@ import { UnlikeAnyToolSection } from "./_components/sections/unlike-any-tool";
 import { BuildMomentumSection } from "./_components/sections/build-momentum";
 import { EnjoyIssueTrackingSection } from "./_components/sections/enjoy-issue-tracking";
 import { SetDirectionSection } from "./_components/sections/set-direction";
+import { useEffect } from "react";
+
+import { useLenis } from "@studio-freight/react-lenis";
 
 const Home = () => {
+  const lenisRef = useLenis();
+  useEffect(() => {
+    function raf(time: number) {
+      lenisRef?.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenisRef?.destroy();
+    };
+  }, []);
   return (
     <>
       <div className="overflow-hidden pb-[16.4rem] md:pb-[25.6rem]">
